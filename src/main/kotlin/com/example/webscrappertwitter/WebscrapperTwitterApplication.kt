@@ -9,7 +9,6 @@ import org.springframework.boot.runApplication
 class WebscrapperTwitterApplication
 
 fun main(args: Array<String>) {
-
     runBlocking {
         val driver = ChromeDriver()
         Login(driver).login()
@@ -18,6 +17,4 @@ fun main(args: Array<String>) {
     }
 
     runApplication<WebscrapperTwitterApplication>(*args)
-
-
 }
